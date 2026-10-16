@@ -41,21 +41,28 @@
 
 ## 🏗️ هندسة البيانات والنمذجة (Data Pipeline & Modeling)
 
-### 1️⃣ معالجة وتنظيف البيانات الخام (Raw Data & Power Query Cleaning)
-بدأ العمل باستيراد البيانات الخام داخل **Power Query Editor** لتشخيص المشاكل التشغيلية، تنظيف القيم المتضاربة، ضبط أنماط البيانات (Data Types)، وحذف التكرارات والتأكد من سلامة الجودة قبل الضخ في النموذج.
+### 1️⃣ البيانات الخام (Raw Data)
+نظرة على شكل البيانات الأصلية غير المعالجة قبل البدء في عمليات التنظيف وهندسة البيانات.
+
+![Raw Data](raw-data.png)
+
+---
+
+### 2️⃣ معالجة وتنظيف البيانات (Power Query Cleaning)
+استيراد البيانات الخام داخل **Power Query Editor** لتشخيص المشاكل التشغيلية، تنظيف القيم المتضاربة، ضبط أنماط البيانات (Data Types)، وحذف التكرارات والتأكد من سلامة الجودة قبل الضخ في النموذج.
 
 ![Power Query Cleaning](power_query_cleaning.png)
 
 ---
 
-### 2️⃣ فصل وجرد جداول الأبعاد (Power Query Dimensions Extraction)
+### 3️⃣ فصل وجرد جداول الأبعاد (Power Query Dimensions Extraction)
 تمت إعادة هيكلة البيانات عبر تطبيق أفضل الممارسات في الـ Data Transformation بفصل الكيانات المتعددة لتوليد جداول الأبعاد المخصصة (مثل `Dim_Customers`, `Dim_Hotels`, `Dim_Rooms`, `Dim_Date`) لضمان مرونة وسرعة الاستعلام.
 
 ![Power Query Dimensions](power-query-dimensions.png)
 
 ---
 
-### 3️⃣ نمذجة البيانات الهيكلية (Star Schema Data Modeling)
+### 4️⃣ نمذجة البيانات الهيكلية (Star Schema Data Modeling)
 داخل **Power BI Desktop**، تم ربط جداول الأبعاد بجدول الحقائق الرئيسي لبناء **Star Schema** احترافي يضمن العلاقات السليمة (1-to-Many)، لسهولة كتابة الـ DAX وتصفية البيانات بمرونة عبر جميع الواجهات.
 
 ![Data Modeling](Data%20Modeling.png)
